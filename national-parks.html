@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>national-Parks</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+<link rel="stylesheet" href="styles.css">
+</head>
+<link rel="stylesheet" href="national-parks.html">
+<video id="video-background" autoplay loop muted>
+  <source src="video/5955965-uhd_3840_2160_30fps.mp4" type="video/mp4">
+
+</video>
+
+<body>
+  
+<header>
+  <h1 class="center">National Parks</h1>
+  <a href="index.html">
+    <button>Home</button>
+  </a>
+  <a href="mountain.html">
+    <button type="Parks">Mountains</button>
+  </a>
+</header>
+
+<main>
+  <label for="parkLocationsDropDown">Locations</label>
+  <select id="parkLocationsDropDown">
+    <option value="">Select...</option>
+  </select>
+
+  <button type="button" id="locationDropDownResults">Show Locations</button>
+
+  <label for="parkType">Parks</label>
+  <select id="parkType">
+    <option value="">Select...</option>
+  </select>
+
+  <button type="button" id="parkTypeButton">Show Park Types</button>
+
+  <table id="peoplesInfoTH">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Phone</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody id="peoplesInfoBody"></tbody>
+  </table>
+</main>
+
+<script src="scripts/locationData.js"></script>
+<script src="scripts/mountainData.js"></script>
+<script src="scripts/nationalParkData.js"></script>
+<script src="scripts/parkTypeData.js"></script>
+<script src="scripts/national-Parks.js"></script>
+</body>
+</html>
